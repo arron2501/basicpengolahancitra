@@ -1,0 +1,154 @@
+object FormUtama: TFormUtama
+  Left = 921
+  Height = 498
+  Top = 170
+  Width = 987
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Tugas UTS - Pengolahan Gambar Sederhana'
+  ClientHeight = 498
+  ClientWidth = 987
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object ButtonLoad: TButton
+    Left = 16
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Load'
+    OnClick = ButtonLoadClick
+    TabOrder = 0
+  end
+  object ButtonRestore: TButton
+    Left = 816
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Restore'
+    OnClick = ButtonRestoreClick
+    TabOrder = 1
+  end
+  object ButtonGray: TButton
+    Left = 120
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Gray'
+    OnClick = ButtonGrayClick
+    TabOrder = 2
+  end
+  object ButtonSave: TButton
+    Left = 901
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Save'
+    OnClick = ButtonSaveClick
+    TabOrder = 3
+  end
+  object ButtonBinary: TButton
+    Left = 200
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Binary'
+    OnClick = ButtonBinaryClick
+    TabOrder = 4
+  end
+  object ButtonInvers: TButton
+    Left = 280
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Invers'
+    OnClick = ButtonInversClick
+    TabOrder = 5
+  end
+  object ButtonBrightnessUp: TButton
+    Left = 416
+    Height = 25
+    Top = 24
+    Width = 40
+    Caption = '+100'
+    OnClick = ButtonBrightnessUpClick
+    TabOrder = 6
+  end
+  object ButtonContrast: TButton
+    Left = 472
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Contrast'
+    OnClick = ButtonContrastClick
+    TabOrder = 7
+  end
+  object ButtonSmoothing: TButton
+    Left = 552
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Smoothing'
+    OnClick = ButtonSmoothingClick
+    TabOrder = 8
+  end
+  object ButtonSharpening: TButton
+    Left = 632
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Sharpening'
+    OnClick = ButtonSharpeningClick
+    TabOrder = 9
+  end
+  object ButtonSketch: TButton
+    Left = 712
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Sketch'
+    OnClick = ButtonSketchClick
+    TabOrder = 10
+  end
+  object ScrollBox1: TScrollBox
+    Left = 16
+    Height = 424
+    Top = 64
+    Width = 960
+    HorzScrollBar.Page = 939
+    VertScrollBar.Page = 403
+    ClientHeight = 403
+    ClientWidth = 939
+    TabOrder = 11
+    object Image1: TImage
+      Left = 0
+      Height = 592
+      Top = 0
+      Width = 952
+      AutoSize = True
+    end
+  end
+  object ButtonBrightnessDown: TButton
+    Left = 376
+    Height = 25
+    Top = 24
+    Width = 40
+    Caption = '-100'
+    OnClick = ButtonBrightnessDownClick
+    TabOrder = 12
+  end
+  object Label1: TLabel
+    Left = 384
+    Height = 15
+    Top = 8
+    Width = 70
+    Caption = '  Brightness   '
+    ParentColor = False
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 64
+    Top = 72
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    Left = 184
+    Top = 72
+  end
+end
